@@ -2,23 +2,13 @@ server:
   port: 4100
 
 spring:
+  datasource:
+      url: jdbc:h2:mem:db;DB_CLOSE_DELAY=-1;MODE=PostgreSQL
+
   cloud:
     discovery:
       enabled: true
-    
-    datasource:
-      url: jdbc:h2:mem:db;DB_CLOSE_DELAY=-1;MODE=PostgreSQL
-    
-eureka:
-  client:
-    enabled: true
-    registerWithEureka: true
-    register-with-eureka: true
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
-    registration:
-      enabled: true
-  
+      
 hystrix:
   command:
     default:
