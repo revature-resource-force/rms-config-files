@@ -1,5 +1,9 @@
 server:
-  port: 4102
+  port: 4100
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;MODE=PostgreSQL
 
   cloud:
     discovery:
