@@ -2,10 +2,6 @@ server:
   port: 4100
 
 spring:
-  h2:
-    console:
-      enabled: true
-
   cloud:
     discovery:
       enabled: true
