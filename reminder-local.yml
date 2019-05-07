@@ -1,0 +1,6 @@
+server:
+  port: 5200
+
+  cloud:
+    discovery:
+      enabled: true
